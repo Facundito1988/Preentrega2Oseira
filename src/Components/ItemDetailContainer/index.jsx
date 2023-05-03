@@ -25,7 +25,6 @@ const productosElec = [
         < ItemDetail data = {data}/>
     )
   }
-
    
 
-  export default ItemDetailContainer;
+  export default ItemDetailContainer; 
