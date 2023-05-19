@@ -29,13 +29,17 @@ export const ItemListContainer = ({  }) => {
     },[categoriasId] ) 
 
    
+    const onAdd = (quantity) => {
+      console.log(`compraste ${quantity} unidades`);
 
+    }
 
 
   return(
     <>  
-      <Contador/>
+      
       <ItemList data={data}/>
+      <Contador inicial={1} stock={8} onAdd={onAdd}/>
     </>
   ); 
 }

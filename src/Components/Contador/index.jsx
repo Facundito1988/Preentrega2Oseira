@@ -1,17 +1,30 @@
 import './itemCount.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 
-export const Contador = () => {
-    const [count, setCount] = useState(1);
+export const Contador = ({inicial, stock, onAdd}) => {
+    const [count, setCount] = useState(parseInt(inicial));
+
+    const quitar = () => {
+        setCount(count - 1);
+    }
+
+    const incrementar = () => {
+        setCount(count + 1);
+    } 
+
+    useEffect(() => {
+        setCount(parseInt(inicial));
+    },[inicial])
+
 
     return (
         <div className='contador'>
-            <button>-</button>
+            <button disabled={count <= 1} onClick={quitar}>-</button>
             <span>{count}</span>
-            <button>+</button>
+            <button disabled={count >= stock} onClick={incrementar}>+</button>
             <div>
-                <button>Agregar al Carrito</button>
+                <button disabled={stock <=0} onClick={() => onAdd(count)}>Agregar al Carrito</button>
             </div>
         </div>
     );
