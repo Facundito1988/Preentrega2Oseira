@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Contador from "../Contador";
 import ItemList from '../ItemList';
 
 const productosElec = [
@@ -28,18 +27,12 @@ export const ItemListContainer = ({  }) => {
     
     },[categoriasId] ) 
 
-   
-    const onAdd = (quantity) => {
-      console.log(`compraste ${quantity} unidades`);
-
-    }
-
 
   return(
     <>  
       
       <ItemList data={data}/>
-      <Contador inicial={1} stock={8} onAdd={onAdd}/>
+  
     </>
   ); 
 }
