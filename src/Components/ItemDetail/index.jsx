@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './ItemDetail.css'
 import Contador from "../Contador";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../Context/CartContext";
@@ -25,8 +26,8 @@ export const ItemDetail = ({ data }) => {
                 <h1>{data.producto}</h1>
                 {
                     goToCart
-                    ? <Link to='/cart'> Finalizar Compra </Link>
-                    : <Contador initial={3} stock={8} onAdd={onAdd} />
+                    ? <Link to='/Carrito'> Finalizar Compra </Link>
+                    : <Contador inicial={1} stock={8} onAdd={onAdd} />
                 }
              </div>
         </div>    

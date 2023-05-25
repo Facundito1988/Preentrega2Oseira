@@ -1,0 +1,36 @@
+.productosElec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .productosElec:hover {
+    transform: translateY(-5px);
+  }
+  
+  .productosElec img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  .productosElec p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .productosElec span {
+    font-size: 14px;
+    color: #999;
+  }

@@ -1,0 +1,40 @@
+.container {
+    background-color: navy;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav_logo {
+    flex-grow: 1;
+  }
+  
+  .nav_brand {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    list-style: none;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .cart-link {
+    margin-left: 20px;
+  }

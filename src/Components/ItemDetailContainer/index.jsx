@@ -14,7 +14,7 @@ const productosElec = [
         const getData = new Promise  (resolve => {
           setTimeout(() => {
               resolve(productosElec)
-          }, 1500) 
+          }, 500) 
         }); 
             getData.then(res => setData(res.find(productosElec => productosElec.id === parseInt(detalleId)))); 
 
