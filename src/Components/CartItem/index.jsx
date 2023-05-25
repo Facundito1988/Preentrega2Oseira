@@ -1,4 +1,5 @@
 import React from "react"
+import './CartItem.css'
 import { useCartContext } from "../../Context/CartContext"
 
 
@@ -9,7 +10,7 @@ const { removeProduct } = useCartContext();
         <div className="cartItem">
             <img src={product.imagen} alt={product.producto} />
             <div>
-                <p>Título: {product.producto}</p>
+                <p>Título: {product.producto}</p>   
                 <p>Precio unit: {product.precio}</p>
                 <p>Subtotal: ${product.quantity * product.precio}</p>
                 <button onClick = {() => removeProduct(product.id)}>Elimnar Producto</button>
