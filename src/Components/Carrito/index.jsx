@@ -48,7 +48,7 @@ const Carrito = () => {
                cart.map(product => <CartItem key={product.id} product={product} />)     
             }
             <p>
-                Total: {totalPrice()}
+                Total: ${totalPrice()}
             </p>
             <button onClick={handleClick}>Finalizar compra</button>
        </>

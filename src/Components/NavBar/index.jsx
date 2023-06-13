@@ -9,7 +9,7 @@
       <div className="container">
         <nav className="nav">
           <div className="nav_logo">
-            <NavLink className="nav_brand" to="/">FACUNDO</NavLink>
+            <NavLink className="nav_brand" to="/">FACUNDO HERRAMIENTAS</NavLink>
           </div>
           <ul className="nav-list">
             <li className="nav-item">
