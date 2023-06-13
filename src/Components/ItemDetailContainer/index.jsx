@@ -10,11 +10,11 @@ import { useParams } from "react-router-dom";
    
     useEffect (() => {
         const querydb = getFirestore();
-        const queryDoc = doc(querydb, 'Productos', 'Fq7z231raCRTGK6yLycJ');
+        const queryDoc = doc(querydb, 'Productos', detalleId);
         getDoc(queryDoc)
-          .then(res => setData ({ id: res.id, ...res.data() }))      
+          .then(res => setData({ id: res.id, ...res.data() }))      
       },[]) 
-      
+
       return(
         < ItemDetail data = {data}/>
     )

@@ -11,8 +11,9 @@ const Item = ({ info }) => {
 
     return (
         <Link to={`/detalle/${info.id}`} className="productosElec">
-            <img src={info.imagen} alt="" />
-            <p>{info.producto}</p>
+            <img src={info.Imagen} alt="" />
+            <p>{info.Producto}</p>
+            <p>${info.Precio}</p>
         </Link>
      );
 }
